@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="projeto2projeto2PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>projeto2projeto2.Exame</class>
+    <class>projeto2projeto2.Utente</class>
+    <class>projeto2projeto2.Receitamedica</class>
+    <class>projeto2projeto2.Cpostal</class>
+    <class>projeto2projeto2.Medico</class>
+    <class>projeto2projeto2.Tratamento</class>
+    <class>projeto2projeto2.Pagamento</class>
+    <class>projeto2projeto2.Funcionario</class>
+    <class>projeto2projeto2.UtenteMedicamento</class>
+    <class>projeto2projeto2.Medicamento</class>
+    <class>projeto2projeto2.Consulta</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="Trabalho_projeto"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="system"/>
+    </properties>
+  </persistence-unit>
+</persistence>
